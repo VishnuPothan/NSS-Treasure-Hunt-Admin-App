@@ -1,0 +1,101 @@
+{
+  "project_info": {
+    "project_number": "170547174211",
+    "firebase_url": "https://nss-treasure-hunt-default-rtdb.firebaseio.com",
+    "project_id": "nss-treasure-hunt",
+    "storage_bucket": "nss-treasure-hunt.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:170547174211:android:c27487667a18842a26adf6",
+        "android_client_info": {
+          "package_name": "com.codemaster.nsstreasurehunt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "170547174211-c0gmonhlhfd6phj8ls96bfmte69m6aiu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.codemaster.nsstreasurehunt",
+            "certificate_hash": "9f0e8ade1924a251f0d75b5930cc198bd3095209"
+          }
+        },
+        {
+          "client_id": "170547174211-d4211276av2epvlv8jpkqt5ch2ssqn66.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.codemaster.nsstreasurehunt",
+            "certificate_hash": "0cda71ab6c41c9ff48b5326f5f99aa136e95671c"
+          }
+        },
+        {
+          "client_id": "170547174211-gt7k89dcc2g4d3uqt4v1vi2659smja9s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.codemaster.nsstreasurehunt",
+            "certificate_hash": "185065d618bb9a4e1e201e99280b0e16941eeab1"
+          }
+        },
+        {
+          "client_id": "170547174211-sslnd8mg8j4p6p37lvn07aibtdsc4fkl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.codemaster.nsstreasurehunt",
+            "certificate_hash": "e348c2251dc9fd22f079f3f4248ce16f249f9e96"
+          }
+        },
+        {
+          "client_id": "170547174211-5861u135frhq0lak9fsbielch0hgl1gq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAB2puIsrJHACPMSatXSIrGPie7aDDjHqo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "170547174211-5861u135frhq0lak9fsbielch0hgl1gq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:170547174211:android:d293080da7f56c1426adf6",
+        "android_client_info": {
+          "package_name": "com.codemaster.nsstreasurehuntadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "170547174211-5861u135frhq0lak9fsbielch0hgl1gq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAB2puIsrJHACPMSatXSIrGPie7aDDjHqo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "170547174211-5861u135frhq0lak9fsbielch0hgl1gq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

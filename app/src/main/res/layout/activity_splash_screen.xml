@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ssbg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".SplashScreen">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/SplashBG"
+        android:src="@drawable/splashbg" />
+
+    <ImageView
+        android:id="@+id/deekshalogo"
+        android:layout_width="match_parent"
+        android:layout_height="295dp"
+        android:contentDescription="@string/deekshalogo"
+        android:scaleType="centerInside"
+        android:src="@drawable/dlogo" />
+
+    <ImageView
+        android:id="@+id/thunt"
+        android:layout_width="match_parent"
+        android:layout_height="273dp"
+        android:layout_below="@+id/deekshalogo"
+        android:layout_marginTop="205dp"
+        android:src="@drawable/thunt"
+        android:contentDescription="@string/thunt" />
+
+   <com.airbnb.lottie.LottieAnimationView
+       android:id="@+id/lottie"
+       android:layout_centerHorizontal="true"
+       android:layout_centerVertical="true"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:lottie_rawRes="@raw/tsure"
+       app:lottie_loop="true"
+       app:lottie_autoPlay="true" />
+
+</RelativeLayout>
