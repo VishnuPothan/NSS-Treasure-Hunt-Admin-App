@@ -19,6 +19,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 
@@ -64,8 +66,14 @@ public class RankViewAdapter extends RecyclerView.Adapter<RankViewAdapter.ViewHo
 
         //other details update
         holder.rankText.setText(String.valueOf(position + 1));
-        holder.timeText.setText(String.valueOf(onGoingDetails.getTime()));
         holder.questionNo.setText(onGoingDetails.getCurrQno());
+
+        //time setup
+        long timeL = (long) onGoingDetails.getTime();
+        Date date = new Date(timeL);
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
+        String dateStr = dateFormat.format(date);
+        holder.timeText.setText(dateStr);
     }
 
     @Override

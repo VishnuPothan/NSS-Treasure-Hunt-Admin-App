@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ProgressBar;
 
@@ -19,6 +20,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class RankView extends AppCompatActivity {
@@ -50,9 +52,12 @@ public class RankView extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for (DataSnapshot postSnapshot : snapshot.getChildren()) {
-                    OnGoingDetail onGoingDetails = postSnapshot.getValue(OnGoingDetail.class);
-                    onGoingDetailsList.add(new OnGoingDetails(postSnapshot.getKey(), onGoingDetails));
+                    OnGoingDetail onGoingDetail = postSnapshot.getValue(OnGoingDetail.class);
+                    Log.i("here date", onGoingDetail.getDate());
+                    onGoingDetailsList.add(new OnGoingDetails(postSnapshot.getKey(), onGoingDetail));
                 }
+                Collections.sort(onGoingDetailsList);
+                Collections.reverse(onGoingDetailsList);
                 progressBar.setVisibility(View.GONE);
                 rankViewAdapter = new RankViewAdapter(onGoingDetailsList);
                 LinearLayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());

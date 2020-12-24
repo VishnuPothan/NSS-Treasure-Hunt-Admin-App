@@ -1,6 +1,6 @@
 package com.codemaster.nsstreasurehuntadmin.model;
 
-public class OnGoingDetails {
+public class OnGoingDetails  implements Comparable<OnGoingDetails>{
     private String userId;
     private OnGoingDetail onGoingDetail;
 
@@ -35,5 +35,11 @@ public class OnGoingDetails {
 
     public void setTime(Object time) {
         this.onGoingDetail.setTime(time);
+    }
+
+    @Override
+    public int compareTo(OnGoingDetails o) {
+        int compareAmount = Integer.parseInt(((OnGoingDetails) o).getCurrQno());
+        return (int) (Integer.parseInt(this.onGoingDetail.getCurrQno()) - compareAmount);
     }
 }
