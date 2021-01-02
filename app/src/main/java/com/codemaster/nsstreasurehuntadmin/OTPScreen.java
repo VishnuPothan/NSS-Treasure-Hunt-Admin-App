@@ -34,6 +34,7 @@ public class OTPScreen extends AppCompatActivity {
     Button verifyBtn;
     PinView OTPCodePinView;
     ProgressBar progressBar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -91,14 +92,14 @@ public class OTPScreen extends AppCompatActivity {
                     startActivity(mainIntent);
                     finish();
                 } else {
-                    Toast.makeText(getApplicationContext(),"Your are not a valid user",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Your are not a valid user", Toast.LENGTH_SHORT).show();
                     progressBar.setVisibility(View.GONE);
                 }
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-                Toast.makeText(getApplicationContext(),"Your are not a valid user!!!",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Your are not a valid user!!!", Toast.LENGTH_SHORT).show();
                 progressBar.setVisibility(View.GONE);
             }
         });
@@ -134,7 +135,7 @@ public class OTPScreen extends AppCompatActivity {
         @Override
         public void onVerificationFailed(FirebaseException e) {
             Toast.makeText(com.codemaster.nsstreasurehuntadmin.OTPScreen.this, e.getMessage(), Toast.LENGTH_SHORT).show();
-            Log.i("here",e.getMessage());
+            Log.i("here", e.getMessage());
         }
     };
 }
